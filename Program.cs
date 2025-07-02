@@ -21,6 +21,8 @@ var summaries = new[]
 
 app.MapGet("/hello", () => "Hello from Render + Docker!");
 
+app.MapGet("/test", () => "Hello from Render + github");
+
 app.MapGet("/weatherforecast", () =>
 {
     var forecast =  Enumerable.Range(1, 5).Select(index =>
